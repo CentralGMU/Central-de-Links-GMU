@@ -127,6 +127,62 @@
   .safety-banner strong{color:var(--ink);}
   .safety-banner p{margin:2px 0 0;font-size:13.5px;color:var(--ink-soft);line-height:1.5;}
 
+  /* ---------- Featured SharePoint banner ---------- */
+  .featured-banner{
+    margin:22px 28px 0;
+    background:linear-gradient(120deg,var(--purple-deep) 0%,var(--purple-mid) 60%,var(--lilac) 130%);
+    border-radius:12px;
+    padding:20px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    flex-wrap:wrap;
+    box-shadow:0 6px 18px rgba(91,44,131,.25);
+  }
+  .featured-banner .fb-left{display:flex; align-items:center; gap:14px;}
+  .featured-banner .fb-icon{
+    width:44px;height:44px;
+    border-radius:11px;
+    background:rgba(255,255,255,.18);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--white);
+    flex:none;
+  }
+  .featured-banner .fb-tag{
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    color:var(--lilac-soft);
+    font-weight:700;
+    margin-bottom:3px;
+  }
+  .featured-banner h2{
+    margin:0;
+    color:var(--white);
+    font-size:17px;
+  }
+  .featured-banner p{
+    margin:4px 0 0;
+    color:rgba(255,255,255,.85);
+    font-size:12.5px;
+  }
+  .featured-banner .fb-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:var(--white);
+    color:var(--purple-deep);
+    text-decoration:none;
+    font-weight:700;
+    font-size:13px;
+    padding:11px 18px;
+    border-radius:8px;
+    white-space:nowrap;
+    transition:transform .15s;
+  }
+  .featured-banner .fb-btn:hover{transform:translateY(-1px);}
+
   /* ---------- Layout ---------- */
   .layout{
     max-width:1180px;
@@ -297,6 +353,23 @@
   </div>
 </div>
 
+<div class="featured-banner">
+  <div class="fb-left">
+    <div class="fb-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+    </div>
+    <div>
+      <div class="fb-tag">Página principal</div>
+      <h2>Portal GMU — SharePoint</h2>
+      <p>Acesse o site completo da gerência, com todas as páginas, documentos e comunicados.</p>
+    </div>
+  </div>
+  <a class="fb-btn" href="https://ipemineracao.sharepoint.com/sites/PortalGMU/SitePages/CollabHome.aspx" target="_blank" rel="noopener">
+    Acessar o Portal
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+  </a>
+</div>
+
 <div class="safety-banner">
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
   <div>
@@ -312,11 +385,14 @@
       <h3>Navegação rápida</h3>
       <a href="#colaboradores">Colaboradores</a>
       <a href="#epis">EPIs e Crachás</a>
+      <a href="#presencas">Listas de Presença</a>
+      <a href="#programas">Programas</a>
       <a href="#inspecoes">Inspeções e Verificações</a>
       <a href="#atividades">Atividades e Registros</a>
       <a href="#melhoria">Melhoria Contínua</a>
       <a href="#logistica">Logística e Materiais</a>
       <a href="#processos">Verificação dos Processos</a>
+      <a href="#rdqa">RDQA</a>
     </div>
 
     <div class="contact-card">
@@ -328,6 +404,10 @@
       <a href="mailto:ovidio.silva@portosudeste.com">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
         Ovídio Silva
+      </a>
+      <a href="mailto:ingrid.pereira@portosudeste.com">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+        Ingrid Pereira
       </a>
     </div>
   </aside>
@@ -387,6 +467,54 @@
       </div>
     </section>
 
+    <section class="section" id="presencas">
+      <div class="section-head">
+        <div class="section-icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <h2>Listas de Presença</h2>
+          <span>GEROT e DDS Mensal</span>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a class="link-item" href="https://portosudeste.jotform.com/220306381521040" target="_blank" rel="noopener">
+          <span class="dot"></span>
+          <span class="txt"><strong>Lista de presença GEROT</strong><small>JotForm</small></span>
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+        <a class="link-item" href="https://portosudeste.jotform.com/252883523246259" target="_blank" rel="noopener">
+          <span class="dot"></span>
+          <span class="txt"><strong>Lista de presença DDS Mensal</strong><small>JotForm</small></span>
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="programas">
+      <div class="section-head">
+        <div class="section-icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 15-2 5 9-11h-4l2-7-9 11h4z"/></svg>
+        </div>
+        <div>
+          <h2>Programas</h2>
+          <span>PAZ e SER — inspeção e autoavaliação</span>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a class="link-item" href="https://portosudeste.jotform.com/app/220523066158249?utm_source=jotform_pwa" target="_blank" rel="noopener">
+          <span class="dot"></span>
+          <span class="txt"><strong>Programa PAZ — Inspeção e Autoavaliação</strong><small>JotForm</small></span>
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+        <a class="link-item" href="https://portosudeste.jotform.com/app/220555465605658" target="_blank" rel="noopener">
+          <span class="dot"></span>
+          <span class="txt"><strong>Programa SER — Inspeção e Autoavaliação</strong><small>JotForm</small></span>
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </section>
+
     <section class="section" id="inspecoes">
       <div class="section-head">
         <div class="section-icon">
@@ -418,13 +546,18 @@
         </div>
         <div>
           <h2>Atividades e Registros</h2>
-          <span>Registro de atividades executadas</span>
+          <span>Registro de atividades e solicitação de serviços</span>
         </div>
       </div>
       <div class="link-grid">
         <a class="link-item" href="https://portosudeste.jotform.com/250074350239047" target="_blank" rel="noopener">
           <span class="dot"></span>
           <span class="txt"><strong>Formulário de atividade</strong><small>JotForm</small></span>
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+        <a class="link-item" href="https://forms.office.com/pages/responsepage.aspx?id=Eui0Mncz3kGrRoZxWf_xLDPBbZAvGMZEmKW_co_FTqdUNEkwRUI4TVIxWjVVNFA5TDlFQUZYV09aMC4u&route=shorturl" target="_blank" rel="noopener">
+          <span class="dot"></span>
+          <span class="txt"><strong>Solicitação de Serviços de Infraestrutura</strong><small>Microsoft Forms</small></span>
           <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
         </a>
       </div>
@@ -507,6 +640,25 @@
         <a class="link-item" href="https://forms.office.com/r/3wVV65E3qY" target="_blank" rel="noopener">
           <span class="dot"></span>
           <span class="txt"><strong>Índice de conformidade</strong><small>Checklist de verificação · Microsoft Forms</small></span>
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="rdqa">
+      <div class="section-head">
+        <div class="section-icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+        </div>
+        <div>
+          <h2>Registro de Desvios e Quase Acidentes — RDQA</h2>
+          <span>Notificação de desvios e quase acidentes</span>
+        </div>
+      </div>
+      <div class="link-grid">
+        <a class="link-item" href="https://portosudeste.jotform.com/250334518108047" target="_blank" rel="noopener">
+          <span class="dot"></span>
+          <span class="txt"><strong>Registro de Desvios e Quase Acidentes (RDQA)</strong><small>JotForm</small></span>
           <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg>
         </a>
       </div>
